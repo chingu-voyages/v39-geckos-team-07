@@ -1,5 +1,6 @@
-import React from 'react';
-import Head from 'next/head';
+import React from "react";
+import Head from "next/head";
+import ThemeRecipes from "../components/ThemeRecipes/ThemeRecipes";
 
 const HomePage = () => {
   return (
@@ -12,8 +13,9 @@ const HomePage = () => {
         <title>Tonight Dining</title>
       </Head>
       <div>HomePage</div>
+      <ThemeRecipes />
     </>
   );
-}
+};
 
 export default HomePage;
