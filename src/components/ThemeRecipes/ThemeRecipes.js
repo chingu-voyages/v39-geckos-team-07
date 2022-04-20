@@ -1,13 +1,7 @@
-import { useQuery } from "react-query";
 import styled from "styled-components";
-import { getCategories } from "../../api";
+import useCategories from "../../hooks/useCategories";
 
 const ThemeRecipes = () => {
-  const { data: categories, isLoading: LoadCT } = useQuery(
-    ["categories"],
-    getCategories
-  );
-
   return <></>;
 };
 
