@@ -11,8 +11,12 @@ const Header = () => {
           <Logo>Logo</Logo>
         <Side>
           <ProfileButton>
-            <span><Icon id="user" size={20} /></span>
-            <span>my page</span>
+            <Link href="/my-page">
+              <Icon id="user" size={20} />
+            </Link>
+            <Link href="/my-page">
+              my page
+            </Link>
           </ProfileButton>          
         </Side>
       </SuperHeader>
