@@ -2,6 +2,9 @@ import React from "react";
 import Head from "next/head";
 import { dehydrate, QueryClient } from "react-query";
 import useCategories, { getCategories } from "../hooks/useCategories";
+import MainSearchbar from "../components/MainSearchbar";
+import ThemeRecipes from "../components/ThemeRecipes/ThemeRecipes";
+import LookupRecipes from "../components/LookupRecipes/LookupRecipes";
 
 const HomePage = () => {
   const { data: categories } = useCategories();
@@ -15,8 +18,9 @@ const HomePage = () => {
         />
         <title>Tonight Dining</title>
       </Head>
-      <div>HomePage</div>
-      {/* <ThemeRecipes /> */}
+      <MainSearchbar />
+      <ThemeRecipes />
+      <LookupRecipes />
     </>
   );
 };
