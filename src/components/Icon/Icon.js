@@ -1,12 +1,6 @@
-import React from 'react';
-import styled from 'styled-components';
-import {
-  Menu,
-  ChevronDown,
-  X,
-  GitHub,
-  User
-} from 'react-feather';
+import React from "react";
+import styled from "styled-components";
+import { Menu, ChevronDown, X, GitHub, User, Search } from "react-feather";
 
 const icons = {
   menu: Menu,
@@ -14,6 +8,7 @@ const icons = {
   close: X,
   github: GitHub,
   user: User,
+  search: Search,
 };
 
 const Icon = ({ id, color, size, strokeWidth, ...delegated }) => {
