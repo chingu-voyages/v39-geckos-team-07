@@ -1,7 +1,7 @@
 import styled from "styled-components";
 import { COLORS } from "../../constants";
 import Icon from "../Icon";
-import mainSearch from "../../public/img/mainSearch_bg.jpg";
+import mainSearch from "../../../public/img/mainSearch_bg.jpg";
 
 const SearchArea = styled.div`
   width: 100%;
