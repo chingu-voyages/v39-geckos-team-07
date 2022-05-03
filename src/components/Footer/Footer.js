@@ -2,6 +2,7 @@ import React from "react";
 import styled from "styled-components";
 
 import Icon from "../Icon";
+import Logo from "../Icon/Logo";
 
 const FooterWrapper = styled.div`
   margin-top: 150px;
@@ -17,6 +18,7 @@ const FooterWrapper = styled.div`
 
 const Top = styled.div`
   text-transform: uppercase;
+  display: flex;
 `;
 
 const Bottom = styled.div``;
@@ -32,10 +34,17 @@ const Copyright = styled.div`
   margin-top: 8px;
 `;
 
+const Subtitle = styled.div`
+  padding: 0px 5px;
+`;
+
 const Footer = () => {
   return (
     <FooterWrapper>
-      <Top>find dining</Top>
+      <Top>
+        <Logo width={21} height={26} white={true}/>
+        <Subtitle>find dining</Subtitle>
+      </Top>
       <Bottom>
         <ExternalLink
           href="https://github.com/chingu-voyages/v39-geckos-team-07"

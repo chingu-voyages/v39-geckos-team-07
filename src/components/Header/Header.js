@@ -2,13 +2,14 @@ import Link from 'next/link';
 import React from 'react';
 import styled from 'styled-components';
 import Icon from '../Icon';
+import Logo from '../Icon/Logo';
 
 const Header = () => {
   return (
     <header>
       <SuperHeader>
         <Side />
-          <Logo>Logo</Logo>
+          <Logo width={55} height={63} white={false}/>
         <Side>
           <ProfileButton>
             <Link href="/my-page">
@@ -40,10 +41,6 @@ const SuperHeader = styled.div`
   padding: 0 36px;
   justify-content: space-between;
   align-items: center;
-`;
-
-const Logo = styled.div`
-    
 `;
 
 const ProfileButton = styled.button`
