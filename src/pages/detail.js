@@ -1,3 +1,9 @@
+import DetailRecipe from '../components/DetailRecipe/DetailRecipe'
+
 export default function Recipe() {
-    return "recycleful detail info"
+  return(
+      <>
+        <DetailRecipe />
+      </>  
+    );
 }
